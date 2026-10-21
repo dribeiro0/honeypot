@@ -1,0 +1,15 @@
+data/
+*.json.log
+downloads/
+*.db
+*.sqlite
+.env
+*.pem
+*.key
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
