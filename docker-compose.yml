@@ -4,5 +4,17 @@ services:
     ports:
       - "22:2222"
     volumes:
-      - ./data/cowrie:/cowrie/cowrie-git/var
+      - cowrie-var:/cowrie/cowrie-git/var
     restart: unless-stopped
+
+  ollama-fake:
+    build: ./ollama-fake
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-logs:/logs
+    restart: unless-stopped
+
+volumes:
+  cowrie-var:
+  ollama-logs:
