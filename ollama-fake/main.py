@@ -158,3 +158,9 @@ async def openai_chat(request: Request):
             "message": {"role": "assistant", "content": CANNED},
         }],
     }
+
+
+#catch-all: must stay LAST
+@app.api_route("/{path:path}", methods=["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS", "PATCH"])
+async def catch_all(path: str):
+    return PlainTextResponse("404 page not found", status_code=404)

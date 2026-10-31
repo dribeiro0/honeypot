@@ -13,3 +13,8 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 .vscode/
+
+logs/
+*.json
+*.jsonl
+*.log
