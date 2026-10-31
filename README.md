@@ -1,5 +1,3 @@
-
-Readme · TXT
 # AI-Endpoint Honeypot: Fake Ollama vs. SSH
  
 A research honeypot that compares how attackers probe **exposed AI model servers** with how they attack **ordinary SSH servers**.
